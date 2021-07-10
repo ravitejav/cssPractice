@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.main-body {
+  width: 100%;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1440px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  height: 100%;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(245, 127, 127);
+}
+.navigation > ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  float: right;
+  justify-content: flex-end;
+}
+.navigation > ul > li {
+  position: relative;
+}
+.navigation > ul > li > a {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation > ul > li:hover > a {
+  background-color: rgba(248, 169, 169);
+  padding: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropDown {
+  height: auto;
+  z-index: 1;
+  width: 180px;
+  position: absolute;
+  top: 100%;
+  display: none;
+  visibility: hidden;
+  background-color: rgb(247, 247, 110);
+  padding: 10px;
+  right: 1%;
+}
+.navigation > ul > li:hover > .dropDown {
+  display: flex;
+  visibility: visible;
+}
+.dropDown > a {
+  background-color: silver;
+  padding: 3px 10px;
+  border-radius: 5px;
 }

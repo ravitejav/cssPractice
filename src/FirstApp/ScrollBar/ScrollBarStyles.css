@@ -1,0 +1,25 @@
+.scrollBarContianer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+h2 {
+    margin-bottom: 10px;
+    font-size: 3.5em;
+}
+p {
+    font-size: 1.6em;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+#scrollbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+    z-index: 1;
+}
